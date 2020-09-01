@@ -1,0 +1,109 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+</head>
+<body>
+    <h1>This is home index</h1>
+    <button class="btn btn-danger">Click me</button>
+
+
+    <img class="logo" src="~/images/Demo1.jpg" alt="logo"/>
+
+
+
+
+
+
+
+
+
+
+    @*@{ 
+        var list = new List<int>() {1,2,3,4,5};
+    }
+
+    @foreach (var item in list)
+    {
+        <h1>@item</h1>
+
+    }*@
+
+
+
+    @*@for (int i = 0; i < 10; i++)
+    {
+        <h1>I am for loop and value is - @i</h1>
+    }*@
+
+
+
+    @*@{
+        int a = 33;
+
+    }
+
+    @switch (a)
+    {
+        case 1:
+            <h1>I am case 1 </h1>
+            break;
+
+        case 2:
+            <h1>I am case 2 </h1>
+            break;
+
+        case 3:
+            <h1>I am case 3 </h1>
+            break;
+
+        default:
+            <h1>I am default</h1>
+            break;
+    }*@
+
+
+
+    @*<h1>Tenary - @(a==8 ? b=10 : b=4)</h1>
+
+        <h3>Value of b = @b</h3>*@
+
+
+
+
+    @*@if (a == 5)
+        {
+            a++;
+            <h1>This is if block and value is = @a</h1>
+        }
+        else if (a == 10)
+        {
+            <h2>Value is equal here</h2>
+        }
+        else
+        {
+            <h1>No result found</h1>
+        }*@
+
+</body>
+
+<script src="~/lib/jquery/jquery.min.js"></script>
+
+
+</html>
+
+<script>
+    $(document).ready(function () {
+        alert("page loaded");
+    });
+</script>
